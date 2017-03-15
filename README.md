@@ -24,7 +24,7 @@ Once you've explored the existing Media Ranker site, this project:
 - requires you to create a Rails application
   - conform to Rails conventions on naming and inflection
   - by using `rails new .` you will create a new rails app _inside_ of the fork folder instead of creating a _new_ folder for your rails app
-  - Add the `minitest-rails`, `minitest-reporters`, and `simplecov`.
+  - Add the `minitest-rails`, `minitest-reporters`, and `simplecov` gems.
   - Next install `minitest-rails` with:  `rails generate minitest:install`
   - Then add the following code to `config/application.rb`
   
