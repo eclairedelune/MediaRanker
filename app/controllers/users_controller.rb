@@ -6,5 +6,6 @@ class UsersController < ApplicationController
   def show
     id = params[:id].to_i
     @user = User.find_by(id)
-    #render error here unless @user
+    #render error here unless @user exists
+  end
 end

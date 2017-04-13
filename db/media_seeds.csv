@@ -1,13 +1,13 @@
-category,title,creator,description
-album,Can't Buy a Thrill,Steely Dan,
-album,Countdown to Ecstasy,Steely Dan,
-album,Pretzel Logic,Steely Dan,
-album,Katy Lied,Steely Dan,
-album,The Royal Scam,Steely Dan,
-album,Aja,Steely Dan,
-album,Gaucho,Steely Dan,
-album,Silence Yourself,Savages,
-album,Adore Life,Savages,
+category,title,creator,description,publication_date
+album,Can't Buy a Thrill,Steely Dan,1987
+album,Countdown to Ecstasy,Steely Dan,3029
+album,Pretzel Logic,Steely Dan,2000
+album,Katy Lied,Steely Dan,1999
+album,The Royal Scam,Steely Dan,1997
+album,Aja,Steely Dan,2004
+album,Gaucho,Steely Dan,2005
+album,Silence Yourself,Savages,2006
+album,Adore Life,Savages,2008
 album,NVM,Tacocat,
 album,Lost Time,Tacocat,
 album,No Regrets,Chastity Belt,
