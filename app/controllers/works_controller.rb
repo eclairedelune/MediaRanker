@@ -22,20 +22,20 @@ class WorksController < ApplicationController
   end
 
   def show
-    @work = Work.find_by(category: params[:category])
+    @work = Work.find_by(id: params[:id])
   end
 
   def edit
     @work = Work.find(params[:id])
   end
 
-  def update
-    work = Work.find(params[:id])
-    work.update_attributes(work_params)
-    work.save
-
-    redirect to work_path(work)
-  end
+  # def update
+  #   work = Work.find(params[:id])
+  #   work.update_attributes(work_params)
+  #   work.save
+  #
+  #   redirect to work_path(work)
+  # end
 
   def destroy
     work = Work.find(params[:id])

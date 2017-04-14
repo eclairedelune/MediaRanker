@@ -1,4 +1,5 @@
 class Work < ApplicationRecord
+  has_many :users, through: :votes
   validates :title, presence: true
-  validates :category, presence: true, inclusion: { in: %w(movie book album)}
+  validates :category, presence: true
 end

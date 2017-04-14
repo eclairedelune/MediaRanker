@@ -1,1 +1,29 @@
-<h1>Test</h1>
+<h1>Media Ranker Ranking the Best of Everything</h1>
+
+<section>
+<p>
+  Media Spotlight:
+</p>
+</section>
+
+<section>
+  <h2>Movies</h2>
+  <ul>
+
+<% @movies.each do |movie| %>
+<li>
+  <%=link_to(movie.title, movie_path(movie.id)) %></p>
+</li>
+<% end %>
+
+  <h2>Albums</h2>
+<% @albums.each do |album| %>
+<li><%=link_to(album.title, album_path(album.id)) %></li>
+<% end %>
+
+  <h2>Books</h2>
+<% @books.each do |book| %>
+<li><%=link_to(book.title, book_path(book.id)) %></li>
+<% end %></br>
+</ul>
+</section>
