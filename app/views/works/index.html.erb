@@ -1,17 +1,14 @@
-<h1>Category#index</h1>
-<ul>
+<h1>Category index</h1>
 
-<li><%= link_to "#{work.title}", welcome_path(work) %></li>
-<% end %>
-</ul>
-<%= link_to "View more #{category}s", by_category %>
-<%end%>
+<%#link_to "View more #{category}s", by_category %>
+
 <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
   <thead>
     <tr>
       <th class="mdl-data-table__cell--non-numeric">Name</th>
     </tr>
   </thead>
+
   <tbody>
     <% @works.each do |work| %>
     <tr>
@@ -19,13 +16,13 @@
         <%= link_to "#{work.title}", welcome_path(work) %>
       </td>
       <td>
-        <%= link_to "✏️", edit_welcome_path(work) %>
+      
       </td>
       <td>
-        <%= link_to "🗑", welcome_path(work), method: :delete, data: {confirm: "Are you sure?"} %>
+
       </td>
-      
-    </tr>
-    <% end %>
-  </tbody>
-</table>
+
+      </tr>
+      <% end %>
+    </tbody>
+  </table>

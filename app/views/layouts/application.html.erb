@@ -14,10 +14,13 @@
    <h1> <%= link_to "Media Ranker", books_path %> </h1>
    <h1> Ranking the Best of Everything </h1>
 
-   <%= link_to "Login", new_user_path %>
-   <%= link_to "Logout", welcome_path %>
-   <%= yield %>
+   <%= link_to "New User", new_user_path %>
+   <% if session[:user_id] %>
+         <li><%= link_to "Logout", logout_path, method: :delete %></li>
+       <% end %>
  </header>
+
+ <%= yield %>
 
   </body>
 </html>

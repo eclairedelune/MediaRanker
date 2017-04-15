@@ -1,8 +1,9 @@
 class WorksController < ApplicationController
   def index
     #create variable which looks up work by category use .order(votescount: :desc order)
-    @works = Work.all
-     @works.order(vote_count: :desc) #should I add a vote column to store vote count?
+    category = params[:category]
+    @works = Work.where(category: category)
+    @works.order(vote_count: :desc) #should I add a vote column to store vote count?
     render :index
   end
 
