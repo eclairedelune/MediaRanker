@@ -3,6 +3,12 @@ root 'welcome#index', as: "welcome"
   resources :users
   resources :votes
 
+  get '/login', to: 'welcome#login_form'
+  
+  post '/login', to: 'welcome#login'
+
+  delete "/logout", to: "welcome#logout"
+
   get '/albums', to: 'works#index', as: 'albums', category: 'album'
 
   get '/albums/new', to: 'works#new', as: 'new_album'

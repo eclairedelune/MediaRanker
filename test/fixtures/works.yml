@@ -5,13 +5,11 @@ one:
   title: MyString
   creator: MyString
   description: MyString
-  description: MyString
   publication_date: 2017-04-11
 
 two:
   category: MyString
   title: MyString
   creator: MyString
-  description: MyString
   description: MyString
   publication_date: 2017-04-11

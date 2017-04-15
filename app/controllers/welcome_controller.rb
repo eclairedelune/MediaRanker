@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
-  
+
   def index
     @movies = Work.where(category: "movie")
     @books = Work.where(category: "book")
@@ -9,15 +9,19 @@ class WelcomeController < ApplicationController
   end
 
   def login
-    #if user exists find_by name
-  #else create new user
+    user_login = User.find_or_create(params[:username])
+    session[:user_id] = user_login.id
+    flash[:success] = "logged in as #{user_login.username}"
   User.save
-  redirect to root_path
+  redirect to :index
   end
 
   def logout
-    redirect to root_path
+    session[:user_id] = nil
+    flash[:success] = "Successfully logged out"
+    redirect to :index
   end
 
-  #maybe will need to add a login form?
+  def login_form;
+  end
 end

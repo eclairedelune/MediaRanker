@@ -1,4 +1,4 @@
-<%= form_for @work do |work| %>
+<%= form_for(@work, url: "/#{@work.category.pluralize}/#{@work.id}", method: :patch) do |work| %>
   <ul class="demo-list-item mdl-list">
     <li class="mdl-list__item">
       <span class="mdl-list__item-primary-content">

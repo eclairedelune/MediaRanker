@@ -1,7 +1,10 @@
 require 'test_helper'
 
 class VoteTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  describe "vote" do
+
+    it "must be valid" do
+      Vote.new.must_be :valid?
+    end
+  end
 end
